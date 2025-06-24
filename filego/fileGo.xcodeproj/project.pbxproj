@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7BC6DC02E03F4170048470C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC6DBF2E03F4170048470C /* KeyboardShortcuts */; };
+		C7BC6DCB2E03F7270048470C /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC6DCA2E03F7270048470C /* HotKey */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7BC6D842E03F32B0048470C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7BC6D6D2E03F3280048470C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7BC6D742E03F3280048470C;
+			remoteInfo = clipGo;
+		};
+		C7BC6D8E2E03F32B0048470C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7BC6D6D2E03F3280048470C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7BC6D742E03F3280048470C;
+			remoteInfo = clipGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7BC6D752E03F3280048470C /* clipGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clipGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BC6D832E03F32B0048470C /* clipGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BC6D8D2E03F32B0048470C /* clipGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C7BC6D772E03F3280048470C /* clipGo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = clipGo;
+			sourceTree = "<group>";
+		};
+		C7BC6D862E03F32B0048470C /* clipGoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = clipGoTests;
+			sourceTree = "<group>";
+		};
+		C7BC6D902E03F32B0048470C /* clipGoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = clipGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7BC6D722E03F3280048470C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BC6DCB2E03F7270048470C /* HotKey in Frameworks */,
+				C7BC6DC02E03F4170048470C /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC6D802E03F32B0048470C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC6D8A2E03F32B0048470C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7BC6D6C2E03F3280048470C = {
+			isa = PBXGroup;
+			children = (
+				C7BC6D772E03F3280048470C /* clipGo */,
+				C7BC6D862E03F32B0048470C /* clipGoTests */,
+				C7BC6D902E03F32B0048470C /* clipGoUITests */,
+				C7BC6D762E03F3280048470C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7BC6D762E03F3280048470C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7BC6D752E03F3280048470C /* clipGo.app */,
+				C7BC6D832E03F32B0048470C /* clipGoTests.xctest */,
+				C7BC6D8D2E03F32B0048470C /* clipGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7BC6D742E03F3280048470C /* clipGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7BC6D972E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGo" */;
+			buildPhases = (
+				C7BC6D712E03F3280048470C /* Sources */,
+				C7BC6D722E03F3280048470C /* Frameworks */,
+				C7BC6D732E03F3280048470C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C7BC6D772E03F3280048470C /* clipGo */,
+			);
+			name = clipGo;
+			packageProductDependencies = (
+				C7BC6DBF2E03F4170048470C /* KeyboardShortcuts */,
+				C7BC6DCA2E03F7270048470C /* HotKey */,
+			);
+			productName = clipGo;
+			productReference = C7BC6D752E03F3280048470C /* clipGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7BC6D822E03F32B0048470C /* clipGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7BC6D9A2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoTests" */;
+			buildPhases = (
+				C7BC6D7F2E03F32B0048470C /* Sources */,
+				C7BC6D802E03F32B0048470C /* Frameworks */,
+				C7BC6D812E03F32B0048470C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7BC6D852E03F32B0048470C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C7BC6D862E03F32B0048470C /* clipGoTests */,
+			);
+			name = clipGoTests;
+			packageProductDependencies = (
+			);
+			productName = clipGoTests;
+			productReference = C7BC6D832E03F32B0048470C /* clipGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7BC6D8C2E03F32B0048470C /* clipGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7BC6D9D2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoUITests" */;
+			buildPhases = (
+				C7BC6D892E03F32B0048470C /* Sources */,
+				C7BC6D8A2E03F32B0048470C /* Frameworks */,
+				C7BC6D8B2E03F32B0048470C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7BC6D8F2E03F32B0048470C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C7BC6D902E03F32B0048470C /* clipGoUITests */,
+			);
+			name = clipGoUITests;
+			packageProductDependencies = (
+			);
+			productName = clipGoUITests;
+			productReference = C7BC6D8D2E03F32B0048470C /* clipGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7BC6D6D2E03F3280048470C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					C7BC6D742E03F3280048470C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C7BC6D822E03F32B0048470C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C7BC6D742E03F3280048470C;
+					};
+					C7BC6D8C2E03F32B0048470C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C7BC6D742E03F3280048470C;
+					};
+				};
+			};
+			buildConfigurationList = C7BC6D702E03F3280048470C /* Build configuration list for PBXProject "fileGo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7BC6D6C2E03F3280048470C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C7BC6DBE2E03F4170048470C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				C7BC6DC92E03F7270048470C /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C7BC6D762E03F3280048470C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7BC6D742E03F3280048470C /* clipGo */,
+				C7BC6D822E03F32B0048470C /* clipGoTests */,
+				C7BC6D8C2E03F32B0048470C /* clipGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7BC6D732E03F3280048470C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC6D812E03F32B0048470C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC6D8B2E03F32B0048470C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7BC6D712E03F3280048470C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC6D7F2E03F32B0048470C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC6D892E03F32B0048470C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7BC6D852E03F32B0048470C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7BC6D742E03F3280048470C /* clipGo */;
+			targetProxy = C7BC6D842E03F32B0048470C /* PBXContainerItemProxy */;
+		};
+		C7BC6D8F2E03F32B0048470C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7BC6D742E03F3280048470C /* clipGo */;
+			targetProxy = C7BC6D8E2E03F32B0048470C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C7BC6D952E03F32B0048470C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7BC6D962E03F32B0048470C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C7BC6D982E03F32B0048470C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clipGo/clipGo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = clipGo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = filego;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7BC6D992E03F32B0048470C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clipGo/clipGo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = clipGo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = filego;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C7BC6D9B2E03F32B0048470C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clipGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/clipGo";
+			};
+			name = Debug;
+		};
+		C7BC6D9C2E03F32B0048470C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clipGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/clipGo";
+			};
+			name = Release;
+		};
+		C7BC6D9E2E03F32B0048470C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = clipGo;
+			};
+			name = Debug;
+		};
+		C7BC6D9F2E03F32B0048470C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RP5GZ99V95;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = clipGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7BC6D702E03F3280048470C /* Build configuration list for PBXProject "fileGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BC6D952E03F32B0048470C /* Debug */,
+				C7BC6D962E03F32B0048470C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7BC6D972E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BC6D982E03F32B0048470C /* Debug */,
+				C7BC6D992E03F32B0048470C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7BC6D9A2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BC6D9B2E03F32B0048470C /* Debug */,
+				C7BC6D9C2E03F32B0048470C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7BC6D9D2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BC6D9E2E03F32B0048470C /* Debug */,
+				C7BC6D9F2E03F32B0048470C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7BC6DBE2E03F4170048470C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		C7BC6DC92E03F7270048470C /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7BC6DBF2E03F4170048470C /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BC6DBE2E03F4170048470C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		C7BC6DCA2E03F7270048470C /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BC6DC92E03F7270048470C /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C7BC6D6D2E03F3280048470C /* Project object */;
+}
