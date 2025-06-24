@@ -4,7 +4,7 @@ import HotKey
 import AppKit
 
 extension KeyboardShortcuts.Name {
-    static let showClipboard = Self("showClipboard")
+    static let showFileGo = Self("showFileGo")
 }
 
 final class HotKeyManager {
@@ -15,7 +15,7 @@ final class HotKeyManager {
     private(set) var keyCombo: KeyCombo? = nil
 
     func registerDefaultHotKey(target: AnyObject, action: Selector) {
-        let combo = KeyCombo(key: .f, modifiers: [.option])
+        let combo = KeyCombo(key: .f, modifiers: [.command, .shift])
         keyCombo = combo
         hotKey = HotKey(keyCombo: combo)
         hotKey?.keyDownHandler = { [weak target] in
@@ -34,7 +34,7 @@ final class HotKeyManager {
     }
     
     func currentHotKeyDescription() -> String {
-        guard let combo = keyCombo else { return "⌘ + ⇧ + V" }
+        guard let combo = keyCombo else { return "⌘ + ⇧ + F" }
         var parts: [String] = []
         if combo.modifiers.contains(.command) { parts.append("⌘") }
         if combo.modifiers.contains(.option) { parts.append("⌥") }
@@ -47,4 +47,4 @@ final class HotKeyManager {
         }
         return parts.joined(separator: " + ")
     }
-}
+} 

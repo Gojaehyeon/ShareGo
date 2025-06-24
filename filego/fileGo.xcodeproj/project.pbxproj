@@ -7,69 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7BC6DC02E03F4170048470C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC6DBF2E03F4170048470C /* KeyboardShortcuts */; };
-		C7BC6DCB2E03F7270048470C /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC6DCA2E03F7270048470C /* HotKey */; };
+		C7EBFE7D2E0A7F31005BAB1C /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C7EBFE7C2E0A7F31005BAB1C /* HotKey */; };
+		C7EBFE802E0A7F57005BAB1C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C7EBFE7F2E0A7F57005BAB1C /* KeyboardShortcuts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C7BC6D842E03F32B0048470C /* PBXContainerItemProxy */ = {
+		C7EBFE4C2E0A7E88005BAB1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C7BC6D6D2E03F3280048470C /* Project object */;
+			containerPortal = C7EBFE352E0A7E87005BAB1C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7BC6D742E03F3280048470C;
-			remoteInfo = clipGo;
+			remoteGlobalIDString = C7EBFE3C2E0A7E87005BAB1C;
+			remoteInfo = fileGo;
 		};
-		C7BC6D8E2E03F32B0048470C /* PBXContainerItemProxy */ = {
+		C7EBFE562E0A7E88005BAB1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C7BC6D6D2E03F3280048470C /* Project object */;
+			containerPortal = C7EBFE352E0A7E87005BAB1C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7BC6D742E03F3280048470C;
-			remoteInfo = clipGo;
+			remoteGlobalIDString = C7EBFE3C2E0A7E87005BAB1C;
+			remoteInfo = fileGo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C7BC6D752E03F3280048470C /* clipGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clipGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7BC6D832E03F32B0048470C /* clipGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7BC6D8D2E03F32B0048470C /* clipGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EBFE3D2E0A7E87005BAB1C /* fileGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fileGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EBFE4B2E0A7E88005BAB1C /* fileGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fileGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EBFE552E0A7E88005BAB1C /* fileGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fileGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C7BC6D772E03F3280048470C /* clipGo */ = {
+		C7EBFE3F2E0A7E87005BAB1C /* fileGo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = clipGo;
+			path = fileGo;
 			sourceTree = "<group>";
 		};
-		C7BC6D862E03F32B0048470C /* clipGoTests */ = {
+		C7EBFE4E2E0A7E88005BAB1C /* fileGoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = clipGoTests;
+			path = fileGoTests;
 			sourceTree = "<group>";
 		};
-		C7BC6D902E03F32B0048470C /* clipGoUITests */ = {
+		C7EBFE582E0A7E88005BAB1C /* fileGoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = clipGoUITests;
+			path = fileGoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C7BC6D722E03F3280048470C /* Frameworks */ = {
+		C7EBFE3A2E0A7E87005BAB1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BC6DCB2E03F7270048470C /* HotKey in Frameworks */,
-				C7BC6DC02E03F4170048470C /* KeyboardShortcuts in Frameworks */,
+				C7EBFE7D2E0A7F31005BAB1C /* HotKey in Frameworks */,
+				C7EBFE802E0A7F57005BAB1C /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7BC6D802E03F32B0048470C /* Frameworks */ = {
+		C7EBFE482E0A7E88005BAB1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7BC6D8A2E03F32B0048470C /* Frameworks */ = {
+		C7EBFE522E0A7E88005BAB1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,22 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C7BC6D6C2E03F3280048470C = {
+		C7EBFE342E0A7E87005BAB1C = {
 			isa = PBXGroup;
 			children = (
-				C7BC6D772E03F3280048470C /* clipGo */,
-				C7BC6D862E03F32B0048470C /* clipGoTests */,
-				C7BC6D902E03F32B0048470C /* clipGoUITests */,
-				C7BC6D762E03F3280048470C /* Products */,
+				C7EBFE3F2E0A7E87005BAB1C /* fileGo */,
+				C7EBFE4E2E0A7E88005BAB1C /* fileGoTests */,
+				C7EBFE582E0A7E88005BAB1C /* fileGoUITests */,
+				C7EBFE3E2E0A7E87005BAB1C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C7BC6D762E03F3280048470C /* Products */ = {
+		C7EBFE3E2E0A7E87005BAB1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7BC6D752E03F3280048470C /* clipGo.app */,
-				C7BC6D832E03F32B0048470C /* clipGoTests.xctest */,
-				C7BC6D8D2E03F32B0048470C /* clipGoUITests.xctest */,
+				C7EBFE3D2E0A7E87005BAB1C /* fileGo.app */,
+				C7EBFE4B2E0A7E88005BAB1C /* fileGoTests.xctest */,
+				C7EBFE552E0A7E88005BAB1C /* fileGoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,140 +102,140 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C7BC6D742E03F3280048470C /* clipGo */ = {
+		C7EBFE3C2E0A7E87005BAB1C /* fileGo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7BC6D972E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGo" */;
+			buildConfigurationList = C7EBFE5F2E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGo" */;
 			buildPhases = (
-				C7BC6D712E03F3280048470C /* Sources */,
-				C7BC6D722E03F3280048470C /* Frameworks */,
-				C7BC6D732E03F3280048470C /* Resources */,
+				C7EBFE392E0A7E87005BAB1C /* Sources */,
+				C7EBFE3A2E0A7E87005BAB1C /* Frameworks */,
+				C7EBFE3B2E0A7E87005BAB1C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C7BC6D772E03F3280048470C /* clipGo */,
+				C7EBFE3F2E0A7E87005BAB1C /* fileGo */,
 			);
-			name = clipGo;
+			name = fileGo;
 			packageProductDependencies = (
-				C7BC6DBF2E03F4170048470C /* KeyboardShortcuts */,
-				C7BC6DCA2E03F7270048470C /* HotKey */,
+				C7EBFE7C2E0A7F31005BAB1C /* HotKey */,
+				C7EBFE7F2E0A7F57005BAB1C /* KeyboardShortcuts */,
 			);
-			productName = clipGo;
-			productReference = C7BC6D752E03F3280048470C /* clipGo.app */;
+			productName = fileGo;
+			productReference = C7EBFE3D2E0A7E87005BAB1C /* fileGo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7BC6D822E03F32B0048470C /* clipGoTests */ = {
+		C7EBFE4A2E0A7E88005BAB1C /* fileGoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7BC6D9A2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoTests" */;
+			buildConfigurationList = C7EBFE622E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoTests" */;
 			buildPhases = (
-				C7BC6D7F2E03F32B0048470C /* Sources */,
-				C7BC6D802E03F32B0048470C /* Frameworks */,
-				C7BC6D812E03F32B0048470C /* Resources */,
+				C7EBFE472E0A7E88005BAB1C /* Sources */,
+				C7EBFE482E0A7E88005BAB1C /* Frameworks */,
+				C7EBFE492E0A7E88005BAB1C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7BC6D852E03F32B0048470C /* PBXTargetDependency */,
+				C7EBFE4D2E0A7E88005BAB1C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C7BC6D862E03F32B0048470C /* clipGoTests */,
+				C7EBFE4E2E0A7E88005BAB1C /* fileGoTests */,
 			);
-			name = clipGoTests;
+			name = fileGoTests;
 			packageProductDependencies = (
 			);
-			productName = clipGoTests;
-			productReference = C7BC6D832E03F32B0048470C /* clipGoTests.xctest */;
+			productName = fileGoTests;
+			productReference = C7EBFE4B2E0A7E88005BAB1C /* fileGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C7BC6D8C2E03F32B0048470C /* clipGoUITests */ = {
+		C7EBFE542E0A7E88005BAB1C /* fileGoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7BC6D9D2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoUITests" */;
+			buildConfigurationList = C7EBFE652E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoUITests" */;
 			buildPhases = (
-				C7BC6D892E03F32B0048470C /* Sources */,
-				C7BC6D8A2E03F32B0048470C /* Frameworks */,
-				C7BC6D8B2E03F32B0048470C /* Resources */,
+				C7EBFE512E0A7E88005BAB1C /* Sources */,
+				C7EBFE522E0A7E88005BAB1C /* Frameworks */,
+				C7EBFE532E0A7E88005BAB1C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7BC6D8F2E03F32B0048470C /* PBXTargetDependency */,
+				C7EBFE572E0A7E88005BAB1C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C7BC6D902E03F32B0048470C /* clipGoUITests */,
+				C7EBFE582E0A7E88005BAB1C /* fileGoUITests */,
 			);
-			name = clipGoUITests;
+			name = fileGoUITests;
 			packageProductDependencies = (
 			);
-			productName = clipGoUITests;
-			productReference = C7BC6D8D2E03F32B0048470C /* clipGoUITests.xctest */;
+			productName = fileGoUITests;
+			productReference = C7EBFE552E0A7E88005BAB1C /* fileGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C7BC6D6D2E03F3280048470C /* Project object */ = {
+		C7EBFE352E0A7E87005BAB1C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					C7BC6D742E03F3280048470C = {
+					C7EBFE3C2E0A7E87005BAB1C = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					C7BC6D822E03F32B0048470C = {
+					C7EBFE4A2E0A7E88005BAB1C = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = C7BC6D742E03F3280048470C;
+						TestTargetID = C7EBFE3C2E0A7E87005BAB1C;
 					};
-					C7BC6D8C2E03F32B0048470C = {
+					C7EBFE542E0A7E88005BAB1C = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = C7BC6D742E03F3280048470C;
+						TestTargetID = C7EBFE3C2E0A7E87005BAB1C;
 					};
 				};
 			};
-			buildConfigurationList = C7BC6D702E03F3280048470C /* Build configuration list for PBXProject "fileGo" */;
+			buildConfigurationList = C7EBFE382E0A7E87005BAB1C /* Build configuration list for PBXProject "fileGo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C7BC6D6C2E03F3280048470C;
+			mainGroup = C7EBFE342E0A7E87005BAB1C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C7BC6DBE2E03F4170048470C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
-				C7BC6DC92E03F7270048470C /* XCRemoteSwiftPackageReference "HotKey" */,
+				C7EBFE7B2E0A7F31005BAB1C /* XCRemoteSwiftPackageReference "HotKey" */,
+				C7EBFE7E2E0A7F57005BAB1C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C7BC6D762E03F3280048470C /* Products */;
+			productRefGroup = C7EBFE3E2E0A7E87005BAB1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7BC6D742E03F3280048470C /* clipGo */,
-				C7BC6D822E03F32B0048470C /* clipGoTests */,
-				C7BC6D8C2E03F32B0048470C /* clipGoUITests */,
+				C7EBFE3C2E0A7E87005BAB1C /* fileGo */,
+				C7EBFE4A2E0A7E88005BAB1C /* fileGoTests */,
+				C7EBFE542E0A7E88005BAB1C /* fileGoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C7BC6D732E03F3280048470C /* Resources */ = {
+		C7EBFE3B2E0A7E87005BAB1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7BC6D812E03F32B0048470C /* Resources */ = {
+		C7EBFE492E0A7E88005BAB1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7BC6D8B2E03F32B0048470C /* Resources */ = {
+		C7EBFE532E0A7E88005BAB1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C7BC6D712E03F3280048470C /* Sources */ = {
+		C7EBFE392E0A7E87005BAB1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7BC6D7F2E03F32B0048470C /* Sources */ = {
+		C7EBFE472E0A7E88005BAB1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7BC6D892E03F32B0048470C /* Sources */ = {
+		C7EBFE512E0A7E88005BAB1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C7BC6D852E03F32B0048470C /* PBXTargetDependency */ = {
+		C7EBFE4D2E0A7E88005BAB1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C7BC6D742E03F3280048470C /* clipGo */;
-			targetProxy = C7BC6D842E03F32B0048470C /* PBXContainerItemProxy */;
+			target = C7EBFE3C2E0A7E87005BAB1C /* fileGo */;
+			targetProxy = C7EBFE4C2E0A7E88005BAB1C /* PBXContainerItemProxy */;
 		};
-		C7BC6D8F2E03F32B0048470C /* PBXTargetDependency */ = {
+		C7EBFE572E0A7E88005BAB1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C7BC6D742E03F3280048470C /* clipGo */;
-			targetProxy = C7BC6D8E2E03F32B0048470C /* PBXContainerItemProxy */;
+			target = C7EBFE3C2E0A7E87005BAB1C /* fileGo */;
+			targetProxy = C7EBFE562E0A7E88005BAB1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C7BC6D952E03F32B0048470C /* Debug */ = {
+		C7EBFE5D2E0A7E88005BAB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		C7BC6D962E03F32B0048470C /* Release */ = {
+		C7EBFE5E2E0A7E88005BAB1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -402,30 +402,26 @@
 			};
 			name = Release;
 		};
-		C7BC6D982E03F32B0048470C /* Debug */ = {
+		C7EBFE602E0A7E88005BAB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = clipGo/clipGo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = fileGo/fileGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RP5GZ99V95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = clipGo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = filego;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGo;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.fileGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -433,30 +429,26 @@
 			};
 			name = Debug;
 		};
-		C7BC6D992E03F32B0048470C /* Release */ = {
+		C7EBFE612E0A7E88005BAB1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = clipGo/clipGo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = fileGo/fileGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RP5GZ99V95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = clipGo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = filego;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGo;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.fileGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -464,7 +456,7 @@
 			};
 			name = Release;
 		};
-		C7BC6D9B2E03F32B0048470C /* Debug */ = {
+		C7EBFE632E0A7E88005BAB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,15 +466,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.fileGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clipGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/clipGo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fileGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fileGo";
 			};
 			name = Debug;
 		};
-		C7BC6D9C2E03F32B0048470C /* Release */ = {
+		C7EBFE642E0A7E88005BAB1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,15 +484,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.fileGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clipGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/clipGo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fileGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fileGo";
 			};
 			name = Release;
 		};
-		C7BC6D9E2E03F32B0048470C /* Debug */ = {
+		C7EBFE662E0A7E88005BAB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -508,15 +500,15 @@
 				DEVELOPMENT_TEAM = RP5GZ99V95;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.fileGoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = clipGo;
+				TEST_TARGET_NAME = fileGo;
 			};
 			name = Debug;
 		};
-		C7BC6D9F2E03F32B0048470C /* Release */ = {
+		C7EBFE672E0A7E88005BAB1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -524,49 +516,49 @@
 				DEVELOPMENT_TEAM = RP5GZ99V95;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.clipGoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojaehyun.fileGoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = clipGo;
+				TEST_TARGET_NAME = fileGo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7BC6D702E03F3280048470C /* Build configuration list for PBXProject "fileGo" */ = {
+		C7EBFE382E0A7E87005BAB1C /* Build configuration list for PBXProject "fileGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7BC6D952E03F32B0048470C /* Debug */,
-				C7BC6D962E03F32B0048470C /* Release */,
+				C7EBFE5D2E0A7E88005BAB1C /* Debug */,
+				C7EBFE5E2E0A7E88005BAB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7BC6D972E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGo" */ = {
+		C7EBFE5F2E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7BC6D982E03F32B0048470C /* Debug */,
-				C7BC6D992E03F32B0048470C /* Release */,
+				C7EBFE602E0A7E88005BAB1C /* Debug */,
+				C7EBFE612E0A7E88005BAB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7BC6D9A2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoTests" */ = {
+		C7EBFE622E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7BC6D9B2E03F32B0048470C /* Debug */,
-				C7BC6D9C2E03F32B0048470C /* Release */,
+				C7EBFE632E0A7E88005BAB1C /* Debug */,
+				C7EBFE642E0A7E88005BAB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7BC6D9D2E03F32B0048470C /* Build configuration list for PBXNativeTarget "clipGoUITests" */ = {
+		C7EBFE652E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7BC6D9E2E03F32B0048470C /* Debug */,
-				C7BC6D9F2E03F32B0048470C /* Release */,
+				C7EBFE662E0A7E88005BAB1C /* Debug */,
+				C7EBFE672E0A7E88005BAB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -574,15 +566,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C7BC6DBE2E03F4170048470C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.0;
-			};
-		};
-		C7BC6DC92E03F7270048470C /* XCRemoteSwiftPackageReference "HotKey" */ = {
+		C7EBFE7B2E0A7F31005BAB1C /* XCRemoteSwiftPackageReference "HotKey" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/soffes/HotKey";
 			requirement = {
@@ -590,20 +574,28 @@
 				kind = branch;
 			};
 		};
+		C7EBFE7E2E0A7F57005BAB1C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7BC6DBF2E03F4170048470C /* KeyboardShortcuts */ = {
+		C7EBFE7C2E0A7F31005BAB1C /* HotKey */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C7BC6DBE2E03F4170048470C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
-			productName = KeyboardShortcuts;
-		};
-		C7BC6DCA2E03F7270048470C /* HotKey */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7BC6DC92E03F7270048470C /* XCRemoteSwiftPackageReference "HotKey" */;
+			package = C7EBFE7B2E0A7F31005BAB1C /* XCRemoteSwiftPackageReference "HotKey" */;
 			productName = HotKey;
+		};
+		C7EBFE7F2E0A7F57005BAB1C /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7EBFE7E2E0A7F57005BAB1C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = C7BC6D6D2E03F3280048470C /* Project object */;
+	rootObject = C7EBFE352E0A7E87005BAB1C /* Project object */;
 }
