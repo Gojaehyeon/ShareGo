@@ -19,7 +19,6 @@ struct FileGoApp: App {
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    let bookmarkManager = FileBookmarkManager()
     var statusItem: NSStatusItem?
     var popoverPanel: NSPanel?
     var escKeyMonitor: Any?
@@ -28,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.setActivationPolicy(.accessory)
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         if let button = statusItem?.button {
-            button.image = NSImage(systemSymbolName: "folder.fill", accessibilityDescription: "FileGo")
+            button.image = NSImage(systemSymbolName: "airdrop", accessibilityDescription: "AirDrop")
             button.action = #selector(showPopover)
             button.target = self
         }
@@ -45,36 +44,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             return
         }
-        let contentView = FileHistoryPopover(bookmarkManager: bookmarkManager)
+        let contentView = AirDropMiniPopover()
         let hosting = NSHostingController(rootView: contentView)
         let panel = NSPanel(contentViewController: hosting)
         hosting.view.registerForDraggedTypes([.fileURL])
-        panel.styleMask = [.titled, .nonactivatingPanel, .fullSizeContentView]
+        panel.styleMask = [.borderless, .nonactivatingPanel, .fullSizeContentView]
         panel.isFloatingPanel = true
         panel.level = .floating
         panel.titleVisibility = .hidden
         panel.titlebarAppearsTransparent = true
-        panel.hasShadow = true
+        panel.hasShadow = false
         panel.backgroundColor = .clear
         panel.isOpaque = false
         panel.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
         panel.standardWindowButton(.closeButton)?.isHidden = true
         panel.standardWindowButton(.miniaturizeButton)?.isHidden = true
         panel.standardWindowButton(.zoomButton)?.isHidden = true
-        NotificationCenter.default.addObserver(forName: NSWindow.didResignKeyNotification, object: panel, queue: .main) { [weak self] _ in
-            self?.popoverPanel?.close()
-            self?.popoverPanel = nil
-            if let monitor = self?.escKeyMonitor {
-                NSEvent.removeMonitor(monitor)
-                self?.escKeyMonitor = nil
-            }
-        }
-        let mouseLocation = NSEvent.mouseLocation
-        if let screen = NSScreen.screens.first(where: { NSMouseInRect(mouseLocation, $0.frame, false) }) {
-            let width = screen.frame.width
-            let height: CGFloat = 420
-            let x: CGFloat = screen.frame.minX
-            let y: CGFloat = screen.frame.minY
+        if let screen = NSScreen.main {
+            let width: CGFloat = 300
+            let height: CGFloat = 300
+            let x: CGFloat = screen.frame.midX - width/2
+            let y: CGFloat = screen.frame.midY - height/2
             let size = NSSize(width: width, height: height)
             let origin = NSPoint(x: x, y: y)
             panel.setFrame(NSRect(origin: origin, size: size), display: true)

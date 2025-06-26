@@ -5,10 +5,6 @@ struct FileHistoryPopover: View {
     @ObservedObject var bookmarkManager: FileBookmarkManager
     var body: some View {
         VStack(spacing: 0) {
-            Text("Registered Files & Folders")
-                .font(.headline)
-                .padding(.top, 12)
-            Divider()
             FinderStyleFileList(urls: bookmarkManager.fileURLs, bookmarkManager: bookmarkManager) { index in
                 bookmarkManager.removeFile(at: index)
             }
@@ -51,9 +47,11 @@ struct FinderStyleFileList: NSViewRepresentable {
             self.bookmarkManager = bookmarkManager
             self.onRemove = onRemove
             let layout = NSCollectionViewFlowLayout()
-            layout.itemSize = NSSize(width: 320, height: 48)
-            layout.minimumLineSpacing = 4
-            layout.sectionInset = NSEdgeInsets(top: 8, left: 24, bottom: 8, right: 24)
+            layout.itemSize = NSSize(width: 100, height: 110)
+            layout.minimumLineSpacing = 16
+            layout.minimumInteritemSpacing = 8
+            layout.sectionInset = NSEdgeInsets(top: 16, left: 24, bottom: 16, right: 24)
+            layout.scrollDirection = .vertical
             collectionView = NSCollectionView()
             super.init()
             collectionView.collectionViewLayout = layout
@@ -62,6 +60,7 @@ struct FinderStyleFileList: NSViewRepresentable {
             collectionView.delegate = self
             collectionView.backgroundColors = [.clear]
             collectionView.isSelectable = true
+            collectionView.allowsMultipleSelection = true
             collectionView.registerForDraggedTypes([.fileURL])
             collectionView.setDraggingSourceOperationMask(.every, forLocal: false)
         }
@@ -112,21 +111,28 @@ class FileItemCell: NSCollectionViewItem {
         super.init(coder: coder)
     }
     override func loadView() {
-        self.view = NSView(frame: NSRect(x: 0, y: 0, width: 320, height: 48))
+        self.view = NSView(frame: NSRect(x: 0, y: 0, width: 100, height: 110))
         view.wantsLayer = true
         view.layer?.cornerRadius = 8
         view.layer?.backgroundColor = NSColor.clear.cgColor
     }
+    override var isSelected: Bool {
+        didSet {
+            view.layer?.backgroundColor = isSelected ? NSColor.selectedControlColor.withAlphaComponent(0.18).cgColor : NSColor.clear.cgColor
+        }
+    }
     func setFile(url: URL) {
         view.subviews.forEach { $0.removeFromSuperview() }
         let icon = NSImageView(image: NSWorkspace.shared.icon(forFile: url.path))
-        icon.frame = NSRect(x: 8, y: 8, width: 32, height: 32)
+        icon.frame = NSRect(x: 20, y: 38, width: 60, height: 60)
         icon.imageScaling = .scaleProportionallyUpOrDown
         let label = NSTextField(labelWithString: url.lastPathComponent)
-        label.frame = NSRect(x: 48, y: 12, width: 220, height: 24)
-        label.font = .systemFont(ofSize: 15)
+        label.frame = NSRect(x: 4, y: 8, width: 92, height: 24)
+        label.font = .systemFont(ofSize: 11)
+        label.alignment = .center
+        label.lineBreakMode = .byTruncatingMiddle
         let removeBtn = NSButton(title: "✕", target: self, action: #selector(removeTapped))
-        removeBtn.frame = NSRect(x: 292, y: 16, width: 16, height: 16)
+        removeBtn.frame = NSRect(x: 76, y: 80, width: 16, height: 16)
         removeBtn.bezelStyle = .inline
         removeBtn.isBordered = false
         view.addSubview(icon)

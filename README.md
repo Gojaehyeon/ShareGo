@@ -29,4 +29,4 @@ No file data is uploaded. Everything is stored **locally and securely** using Ap
 ## ⌨️ Default Shortcut
 
 ```text
-Command (⌘) + Shift (⇧) + F
+Command (⌘) + Shift (⇧) + 
