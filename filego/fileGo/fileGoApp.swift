@@ -27,11 +27,57 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.setActivationPolicy(.accessory)
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         if let button = statusItem?.button {
-            button.image = NSImage(systemSymbolName: "airdrop", accessibilityDescription: "AirDrop")
-            button.action = #selector(showPopover)
+            button.image = NSImage(systemSymbolName: "square.and.arrow.up", accessibilityDescription: "Share")
+            button.action = #selector(statusBarButtonClicked)
             button.target = self
         }
+        statusItem?.menu = makeMenu()
         HotKeyManager.shared.registerDefaultHotKey(target: self, action: #selector(showPopover))
+    }
+
+    @objc func statusBarButtonClicked() {
+        statusItem?.menu = makeMenu()
+        statusItem?.button?.performClick(nil)
+    }
+
+    func makeMenu() -> NSMenu {
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title: "About Airgo", action: #selector(showAbout), keyEquivalent: ""))
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Open Airgo", action: #selector(showPopover), keyEquivalent: ""))
+        let currentHotkey = HotKeyManager.shared.currentHotKeyDescription()
+        menu.addItem(NSMenuItem(title: "Change Hotkey (\(currentHotkey))", action: #selector(changeHotkey), keyEquivalent: ""))
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: "q"))
+        return menu
+    }
+
+    @objc func showAbout() {
+        let aboutView = AboutView()
+        let hosting = NSHostingController(rootView: aboutView)
+        let panel = NSPanel(contentViewController: hosting)
+        panel.styleMask = [.titled, .closable]
+        panel.title = "About Airgo"
+        panel.setFrame(NSRect(x: 0, y: 0, width: 400, height: 460), display: true)
+        panel.center()
+        panel.isReleasedWhenClosed = false
+        panel.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
+    }
+
+    @objc func changeHotkey() {
+        let vc = HotKeyPopoverViewController()
+        let popover = NSPopover()
+        popover.contentViewController = vc
+        popover.behavior = .transient
+        popover.contentSize = NSSize(width: 260, height: 140)
+        if let button = statusItem?.button {
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: .maxY)
+        }
+    }
+
+    @objc func quitApp() {
+        NSApp.terminate(nil)
     }
 
     @objc func showPopover() {
