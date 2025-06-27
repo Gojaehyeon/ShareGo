@@ -92,6 +92,7 @@ class HotKeyPopoverViewController: NSViewController {
 
     @objc private func saveHotKey() {
         guard let key = capturedKey, let modifiers = capturedModifiers else { return }
+        // updateHotKey에서 자동으로 UserDefaults에 저장됨
         HotKeyManager.shared.updateHotKey(key: key, modifiers: modifiers, target: NSApp.delegate as AnyObject, action: #selector(AppDelegate.showPopover))
         print("💾 Hotkey saved")
         self.view.window?.close()

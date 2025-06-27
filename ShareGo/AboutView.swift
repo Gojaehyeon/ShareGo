@@ -8,7 +8,7 @@ struct AboutView: View {
                 .frame(width: 100, height: 100)
                 .cornerRadius(20)
                 .shadow(radius: 8)
-            Text("Airgo")
+            Text("ShareGo")
                 .font(.system(size: 36, weight: .bold))
                 .padding(.top, 8)
             Text("Version 1.0")

@@ -7,69 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7EBFE7D2E0A7F31005BAB1C /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C7EBFE7C2E0A7F31005BAB1C /* HotKey */; };
-		C7EBFE802E0A7F57005BAB1C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C7EBFE7F2E0A7F57005BAB1C /* KeyboardShortcuts */; };
+		C79EC4142E0E476700B83088 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C79EC4132E0E476700B83088 /* HotKey */; };
+		C79EC4172E0E477D00B83088 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C79EC4162E0E477D00B83088 /* KeyboardShortcuts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C7EBFE4C2E0A7E88005BAB1C /* PBXContainerItemProxy */ = {
+		C79EC3EA2E0E459E00B83088 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C7EBFE352E0A7E87005BAB1C /* Project object */;
+			containerPortal = C79EC3D32E0E459D00B83088 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7EBFE3C2E0A7E87005BAB1C;
-			remoteInfo = fileGo;
+			remoteGlobalIDString = C79EC3DA2E0E459D00B83088;
+			remoteInfo = ShareGo;
 		};
-		C7EBFE562E0A7E88005BAB1C /* PBXContainerItemProxy */ = {
+		C79EC3F42E0E459E00B83088 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C7EBFE352E0A7E87005BAB1C /* Project object */;
+			containerPortal = C79EC3D32E0E459D00B83088 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7EBFE3C2E0A7E87005BAB1C;
-			remoteInfo = fileGo;
+			remoteGlobalIDString = C79EC3DA2E0E459D00B83088;
+			remoteInfo = ShareGo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C7EBFE3D2E0A7E87005BAB1C /* fileGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fileGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7EBFE4B2E0A7E88005BAB1C /* fileGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fileGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7EBFE552E0A7E88005BAB1C /* fileGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fileGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79EC3DB2E0E459D00B83088 /* ShareGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79EC3E92E0E459E00B83088 /* ShareGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79EC3F32E0E459E00B83088 /* ShareGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C7EBFE3F2E0A7E87005BAB1C /* fileGo */ = {
+		C79EC3DD2E0E459D00B83088 /* ShareGo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fileGo;
+			path = ShareGo;
 			sourceTree = "<group>";
 		};
-		C7EBFE4E2E0A7E88005BAB1C /* fileGoTests */ = {
+		C79EC3EC2E0E459E00B83088 /* ShareGoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fileGoTests;
+			path = ShareGoTests;
 			sourceTree = "<group>";
 		};
-		C7EBFE582E0A7E88005BAB1C /* fileGoUITests */ = {
+		C79EC3F62E0E459E00B83088 /* ShareGoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fileGoUITests;
+			path = ShareGoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C7EBFE3A2E0A7E87005BAB1C /* Frameworks */ = {
+		C79EC3D82E0E459D00B83088 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EBFE7D2E0A7F31005BAB1C /* HotKey in Frameworks */,
-				C7EBFE802E0A7F57005BAB1C /* KeyboardShortcuts in Frameworks */,
+				C79EC4142E0E476700B83088 /* HotKey in Frameworks */,
+				C79EC4172E0E477D00B83088 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EBFE482E0A7E88005BAB1C /* Frameworks */ = {
+		C79EC3E62E0E459E00B83088 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EBFE522E0A7E88005BAB1C /* Frameworks */ = {
+		C79EC3F02E0E459E00B83088 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,22 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C7EBFE342E0A7E87005BAB1C = {
+		C79EC3D22E0E459D00B83088 = {
 			isa = PBXGroup;
 			children = (
-				C7EBFE3F2E0A7E87005BAB1C /* fileGo */,
-				C7EBFE4E2E0A7E88005BAB1C /* fileGoTests */,
-				C7EBFE582E0A7E88005BAB1C /* fileGoUITests */,
-				C7EBFE3E2E0A7E87005BAB1C /* Products */,
+				C79EC3DD2E0E459D00B83088 /* ShareGo */,
+				C79EC3EC2E0E459E00B83088 /* ShareGoTests */,
+				C79EC3F62E0E459E00B83088 /* ShareGoUITests */,
+				C79EC3DC2E0E459D00B83088 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C7EBFE3E2E0A7E87005BAB1C /* Products */ = {
+		C79EC3DC2E0E459D00B83088 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7EBFE3D2E0A7E87005BAB1C /* fileGo.app */,
-				C7EBFE4B2E0A7E88005BAB1C /* fileGoTests.xctest */,
-				C7EBFE552E0A7E88005BAB1C /* fileGoUITests.xctest */,
+				C79EC3DB2E0E459D00B83088 /* ShareGo.app */,
+				C79EC3E92E0E459E00B83088 /* ShareGoTests.xctest */,
+				C79EC3F32E0E459E00B83088 /* ShareGoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,140 +102,140 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C7EBFE3C2E0A7E87005BAB1C /* fileGo */ = {
+		C79EC3DA2E0E459D00B83088 /* ShareGo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7EBFE5F2E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGo" */;
+			buildConfigurationList = C79EC3FD2E0E459E00B83088 /* Build configuration list for PBXNativeTarget "ShareGo" */;
 			buildPhases = (
-				C7EBFE392E0A7E87005BAB1C /* Sources */,
-				C7EBFE3A2E0A7E87005BAB1C /* Frameworks */,
-				C7EBFE3B2E0A7E87005BAB1C /* Resources */,
+				C79EC3D72E0E459D00B83088 /* Sources */,
+				C79EC3D82E0E459D00B83088 /* Frameworks */,
+				C79EC3D92E0E459D00B83088 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C7EBFE3F2E0A7E87005BAB1C /* fileGo */,
+				C79EC3DD2E0E459D00B83088 /* ShareGo */,
 			);
-			name = fileGo;
+			name = ShareGo;
 			packageProductDependencies = (
-				C7EBFE7C2E0A7F31005BAB1C /* HotKey */,
-				C7EBFE7F2E0A7F57005BAB1C /* KeyboardShortcuts */,
+				C79EC4132E0E476700B83088 /* HotKey */,
+				C79EC4162E0E477D00B83088 /* KeyboardShortcuts */,
 			);
-			productName = fileGo;
-			productReference = C7EBFE3D2E0A7E87005BAB1C /* fileGo.app */;
+			productName = ShareGo;
+			productReference = C79EC3DB2E0E459D00B83088 /* ShareGo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7EBFE4A2E0A7E88005BAB1C /* fileGoTests */ = {
+		C79EC3E82E0E459E00B83088 /* ShareGoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7EBFE622E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoTests" */;
+			buildConfigurationList = C79EC4002E0E459E00B83088 /* Build configuration list for PBXNativeTarget "ShareGoTests" */;
 			buildPhases = (
-				C7EBFE472E0A7E88005BAB1C /* Sources */,
-				C7EBFE482E0A7E88005BAB1C /* Frameworks */,
-				C7EBFE492E0A7E88005BAB1C /* Resources */,
+				C79EC3E52E0E459E00B83088 /* Sources */,
+				C79EC3E62E0E459E00B83088 /* Frameworks */,
+				C79EC3E72E0E459E00B83088 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7EBFE4D2E0A7E88005BAB1C /* PBXTargetDependency */,
+				C79EC3EB2E0E459E00B83088 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C7EBFE4E2E0A7E88005BAB1C /* fileGoTests */,
+				C79EC3EC2E0E459E00B83088 /* ShareGoTests */,
 			);
-			name = fileGoTests;
+			name = ShareGoTests;
 			packageProductDependencies = (
 			);
-			productName = fileGoTests;
-			productReference = C7EBFE4B2E0A7E88005BAB1C /* fileGoTests.xctest */;
+			productName = ShareGoTests;
+			productReference = C79EC3E92E0E459E00B83088 /* ShareGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C7EBFE542E0A7E88005BAB1C /* fileGoUITests */ = {
+		C79EC3F22E0E459E00B83088 /* ShareGoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7EBFE652E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoUITests" */;
+			buildConfigurationList = C79EC4032E0E459E00B83088 /* Build configuration list for PBXNativeTarget "ShareGoUITests" */;
 			buildPhases = (
-				C7EBFE512E0A7E88005BAB1C /* Sources */,
-				C7EBFE522E0A7E88005BAB1C /* Frameworks */,
-				C7EBFE532E0A7E88005BAB1C /* Resources */,
+				C79EC3EF2E0E459E00B83088 /* Sources */,
+				C79EC3F02E0E459E00B83088 /* Frameworks */,
+				C79EC3F12E0E459E00B83088 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7EBFE572E0A7E88005BAB1C /* PBXTargetDependency */,
+				C79EC3F52E0E459E00B83088 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C7EBFE582E0A7E88005BAB1C /* fileGoUITests */,
+				C79EC3F62E0E459E00B83088 /* ShareGoUITests */,
 			);
-			name = fileGoUITests;
+			name = ShareGoUITests;
 			packageProductDependencies = (
 			);
-			productName = fileGoUITests;
-			productReference = C7EBFE552E0A7E88005BAB1C /* fileGoUITests.xctest */;
+			productName = ShareGoUITests;
+			productReference = C79EC3F32E0E459E00B83088 /* ShareGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C7EBFE352E0A7E87005BAB1C /* Project object */ = {
+		C79EC3D32E0E459D00B83088 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					C7EBFE3C2E0A7E87005BAB1C = {
+					C79EC3DA2E0E459D00B83088 = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					C7EBFE4A2E0A7E88005BAB1C = {
+					C79EC3E82E0E459E00B83088 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = C7EBFE3C2E0A7E87005BAB1C;
+						TestTargetID = C79EC3DA2E0E459D00B83088;
 					};
-					C7EBFE542E0A7E88005BAB1C = {
+					C79EC3F22E0E459E00B83088 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = C7EBFE3C2E0A7E87005BAB1C;
+						TestTargetID = C79EC3DA2E0E459D00B83088;
 					};
 				};
 			};
-			buildConfigurationList = C7EBFE382E0A7E87005BAB1C /* Build configuration list for PBXProject "fileGo" */;
+			buildConfigurationList = C79EC3D62E0E459D00B83088 /* Build configuration list for PBXProject "ShareGo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C7EBFE342E0A7E87005BAB1C;
+			mainGroup = C79EC3D22E0E459D00B83088;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C7EBFE7B2E0A7F31005BAB1C /* XCRemoteSwiftPackageReference "HotKey" */,
-				C7EBFE7E2E0A7F57005BAB1C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				C79EC4122E0E476700B83088 /* XCRemoteSwiftPackageReference "HotKey" */,
+				C79EC4152E0E477D00B83088 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C7EBFE3E2E0A7E87005BAB1C /* Products */;
+			productRefGroup = C79EC3DC2E0E459D00B83088 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7EBFE3C2E0A7E87005BAB1C /* fileGo */,
-				C7EBFE4A2E0A7E88005BAB1C /* fileGoTests */,
-				C7EBFE542E0A7E88005BAB1C /* fileGoUITests */,
+				C79EC3DA2E0E459D00B83088 /* ShareGo */,
+				C79EC3E82E0E459E00B83088 /* ShareGoTests */,
+				C79EC3F22E0E459E00B83088 /* ShareGoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C7EBFE3B2E0A7E87005BAB1C /* Resources */ = {
+		C79EC3D92E0E459D00B83088 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EBFE492E0A7E88005BAB1C /* Resources */ = {
+		C79EC3E72E0E459E00B83088 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EBFE532E0A7E88005BAB1C /* Resources */ = {
+		C79EC3F12E0E459E00B83088 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C7EBFE392E0A7E87005BAB1C /* Sources */ = {
+		C79EC3D72E0E459D00B83088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EBFE472E0A7E88005BAB1C /* Sources */ = {
+		C79EC3E52E0E459E00B83088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EBFE512E0A7E88005BAB1C /* Sources */ = {
+		C79EC3EF2E0E459E00B83088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C7EBFE4D2E0A7E88005BAB1C /* PBXTargetDependency */ = {
+		C79EC3EB2E0E459E00B83088 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C7EBFE3C2E0A7E87005BAB1C /* fileGo */;
-			targetProxy = C7EBFE4C2E0A7E88005BAB1C /* PBXContainerItemProxy */;
+			target = C79EC3DA2E0E459D00B83088 /* ShareGo */;
+			targetProxy = C79EC3EA2E0E459E00B83088 /* PBXContainerItemProxy */;
 		};
-		C7EBFE572E0A7E88005BAB1C /* PBXTargetDependency */ = {
+		C79EC3F52E0E459E00B83088 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C7EBFE3C2E0A7E87005BAB1C /* fileGo */;
-			targetProxy = C7EBFE562E0A7E88005BAB1C /* PBXContainerItemProxy */;
+			target = C79EC3DA2E0E459D00B83088 /* ShareGo */;
+			targetProxy = C79EC3F42E0E459E00B83088 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C7EBFE5D2E0A7E88005BAB1C /* Debug */ = {
+		C79EC3FB2E0E459E00B83088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		C7EBFE5E2E0A7E88005BAB1C /* Release */ = {
+		C79EC3FC2E0E459E00B83088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -402,12 +402,12 @@
 			};
 			name = Release;
 		};
-		C7EBFE602E0A7E88005BAB1C /* Debug */ = {
+		C79EC3FE2E0E459E00B83088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = fileGo/fileGo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ShareGo/ShareGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -415,7 +415,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = ShareGo;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareGO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,12 +432,12 @@
 			};
 			name = Debug;
 		};
-		C7EBFE612E0A7E88005BAB1C /* Release */ = {
+		C79EC3FF2E0E459E00B83088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = fileGo/fileGo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ShareGo/ShareGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -445,7 +445,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = ShareGo;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareGO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,7 +462,7 @@
 			};
 			name = Release;
 		};
-		C7EBFE632E0A7E88005BAB1C /* Debug */ = {
+		C79EC4012E0E459E00B83088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -476,11 +476,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fileGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fileGo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShareGo";
 			};
 			name = Debug;
 		};
-		C7EBFE642E0A7E88005BAB1C /* Release */ = {
+		C79EC4022E0E459E00B83088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,11 +494,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fileGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fileGo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShareGo";
 			};
 			name = Release;
 		};
-		C7EBFE662E0A7E88005BAB1C /* Debug */ = {
+		C79EC4042E0E459E00B83088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -510,11 +510,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = fileGo;
+				TEST_TARGET_NAME = ShareGo;
 			};
 			name = Debug;
 		};
-		C7EBFE672E0A7E88005BAB1C /* Release */ = {
+		C79EC4052E0E459E00B83088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -526,45 +526,45 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = fileGo;
+				TEST_TARGET_NAME = ShareGo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7EBFE382E0A7E87005BAB1C /* Build configuration list for PBXProject "fileGo" */ = {
+		C79EC3D62E0E459D00B83088 /* Build configuration list for PBXProject "ShareGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7EBFE5D2E0A7E88005BAB1C /* Debug */,
-				C7EBFE5E2E0A7E88005BAB1C /* Release */,
+				C79EC3FB2E0E459E00B83088 /* Debug */,
+				C79EC3FC2E0E459E00B83088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7EBFE5F2E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGo" */ = {
+		C79EC3FD2E0E459E00B83088 /* Build configuration list for PBXNativeTarget "ShareGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7EBFE602E0A7E88005BAB1C /* Debug */,
-				C7EBFE612E0A7E88005BAB1C /* Release */,
+				C79EC3FE2E0E459E00B83088 /* Debug */,
+				C79EC3FF2E0E459E00B83088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7EBFE622E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoTests" */ = {
+		C79EC4002E0E459E00B83088 /* Build configuration list for PBXNativeTarget "ShareGoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7EBFE632E0A7E88005BAB1C /* Debug */,
-				C7EBFE642E0A7E88005BAB1C /* Release */,
+				C79EC4012E0E459E00B83088 /* Debug */,
+				C79EC4022E0E459E00B83088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7EBFE652E0A7E88005BAB1C /* Build configuration list for PBXNativeTarget "fileGoUITests" */ = {
+		C79EC4032E0E459E00B83088 /* Build configuration list for PBXNativeTarget "ShareGoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7EBFE662E0A7E88005BAB1C /* Debug */,
-				C7EBFE672E0A7E88005BAB1C /* Release */,
+				C79EC4042E0E459E00B83088 /* Debug */,
+				C79EC4052E0E459E00B83088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -572,7 +572,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C7EBFE7B2E0A7F31005BAB1C /* XCRemoteSwiftPackageReference "HotKey" */ = {
+		C79EC4122E0E476700B83088 /* XCRemoteSwiftPackageReference "HotKey" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/soffes/HotKey";
 			requirement = {
@@ -580,7 +580,7 @@
 				kind = branch;
 			};
 		};
-		C7EBFE7E2E0A7F57005BAB1C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+		C79EC4152E0E477D00B83088 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
 			requirement = {
@@ -591,17 +591,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7EBFE7C2E0A7F31005BAB1C /* HotKey */ = {
+		C79EC4132E0E476700B83088 /* HotKey */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C7EBFE7B2E0A7F31005BAB1C /* XCRemoteSwiftPackageReference "HotKey" */;
+			package = C79EC4122E0E476700B83088 /* XCRemoteSwiftPackageReference "HotKey" */;
 			productName = HotKey;
 		};
-		C7EBFE7F2E0A7F57005BAB1C /* KeyboardShortcuts */ = {
+		C79EC4162E0E477D00B83088 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C7EBFE7E2E0A7F57005BAB1C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			package = C79EC4152E0E477D00B83088 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = C7EBFE352E0A7E87005BAB1C /* Project object */;
+	rootObject = C79EC3D32E0E459D00B83088 /* Project object */;
 }

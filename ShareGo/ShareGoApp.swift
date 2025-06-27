@@ -1,6 +1,6 @@
 //
-//  fileGoApp.swift
-//  fileGo
+//  ShareGoApp.swift
+//  ShareGo
 //
 //  Created by Gojaehyun on 6/24/25.
 //
@@ -11,7 +11,7 @@ import HotKey
 import ServiceManagement
 
 @main
-struct FileGoApp: App {
+struct ShareGoApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         Settings {}
@@ -32,7 +32,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.target = self
         }
         statusItem?.menu = makeMenu()
-        HotKeyManager.shared.registerDefaultHotKey(target: self, action: #selector(showPopover))
+        HotKeyManager.shared.registerSavedOrDefaultHotKey(target: self, action: #selector(showPopover))
+        NotificationCenter.default.addObserver(self, selector: #selector(hotKeyChanged), name: HotKeyManager.hotKeyChangedNotification, object: nil)
     }
 
     @objc func statusBarButtonClicked() {
@@ -42,9 +43,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func makeMenu() -> NSMenu {
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "About Airgo", action: #selector(showAbout), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "About ShareGo", action: #selector(showAbout), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "Open Airgo", action: #selector(showPopover), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Open ShareGo", action: #selector(showPopover), keyEquivalent: ""))
         let currentHotkey = HotKeyManager.shared.currentHotKeyDescription()
         menu.addItem(NSMenuItem(title: "Change Hotkey (\(currentHotkey))", action: #selector(changeHotkey), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
@@ -57,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let hosting = NSHostingController(rootView: aboutView)
         let panel = NSPanel(contentViewController: hosting)
         panel.styleMask = [.titled, .closable]
-        panel.title = "About Airgo"
+        panel.title = "About ShareGo"
         panel.setFrame(NSRect(x: 0, y: 0, width: 400, height: 460), display: true)
         panel.center()
         panel.isReleasedWhenClosed = false
@@ -132,5 +133,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             return event
         }
+    }
+
+    @objc func hotKeyChanged() {
+        statusItem?.menu = makeMenu()
     }
 }

@@ -1,13 +1,13 @@
 //
-//  fileGoUITests.swift
-//  fileGoUITests
+//  ShareGoUITests.swift
+//  ShareGoUITests
 //
-//  Created by Gojaehyun on 6/24/25.
+//  Created by Gojaehyun on 6/27/25.
 //
 
 import XCTest
 
-final class fileGoUITests: XCTestCase {
+final class ShareGoUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -28,7 +28,7 @@ struct AirDropMiniPopover: View {
                         .shadow(radius: 8)
                 }
                 .frame(height: 140)
-                Text("Drop to AirDrop")
+                Text("Drop to ShareGo")
                     .font(.headline)
                     .foregroundColor(.white.opacity(0.85))
                     .padding(.top, 8)

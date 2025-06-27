@@ -1,13 +1,13 @@
 //
-//  fileGoUITestsLaunchTests.swift
-//  fileGoUITests
+//  ShareGoUITestsLaunchTests.swift
+//  ShareGoUITests
 //
-//  Created by Gojaehyun on 6/24/25.
+//  Created by Gojaehyun on 6/27/25.
 //
 
 import XCTest
 
-final class fileGoUITestsLaunchTests: XCTestCase {
+final class ShareGoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

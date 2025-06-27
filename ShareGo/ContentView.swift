@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  fileGo
+//  ShareGo
 //
 //  Created by Gojaehyun on 6/24/25.
 //
