@@ -35,6 +35,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         statusItem?.menu = makeMenu()
         HotKeyManager.shared.registerSavedOrDefaultHotKey(target: self, action: #selector(showPopover))
         NotificationCenter.default.addObserver(self, selector: #selector(hotKeyChanged), name: HotKeyManager.hotKeyChangedNotification, object: nil)
+        // 로그인 시 자동 실행 등록
+        do {
+            try SMAppService.mainApp.register()
+            print("Registered for launch at login")
+        } catch {
+            print("Failed to register for launch at login: \(error)")
+        }
     }
 
     @objc func statusBarButtonClicked() {
