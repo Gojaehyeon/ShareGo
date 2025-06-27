@@ -18,10 +18,11 @@ struct ShareGoApp: App {
     }
 }
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     var statusItem: NSStatusItem?
     var popoverPanel: NSPanel?
     var escKeyMonitor: Any?
+    let popoverPanelOriginKey = "popoverPanelOrigin"
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
@@ -48,6 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem(title: "Open ShareGo", action: #selector(showPopover), keyEquivalent: ""))
         let currentHotkey = HotKeyManager.shared.currentHotKeyDescription()
         menu.addItem(NSMenuItem(title: "Change Hotkey (\(currentHotkey))", action: #selector(changeHotkey), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Reset Popover Position", action: #selector(resetPopoverPosition), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: "q"))
         return menu
@@ -95,7 +97,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let hosting = NSHostingController(rootView: contentView)
         let panel = NSPanel(contentViewController: hosting)
         hosting.view.registerForDraggedTypes([.fileURL])
-        panel.styleMask = [.borderless, .nonactivatingPanel, .fullSizeContentView]
+        panel.styleMask = [.titled, .nonactivatingPanel, .fullSizeContentView]
         panel.isFloatingPanel = true
         panel.level = .floating
         panel.titleVisibility = .hidden
@@ -107,17 +109,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         panel.standardWindowButton(.closeButton)?.isHidden = true
         panel.standardWindowButton(.miniaturizeButton)?.isHidden = true
         panel.standardWindowButton(.zoomButton)?.isHidden = true
-        if let screen = NSScreen.main {
-            let width: CGFloat = 300
-            let height: CGFloat = 300
+        let width: CGFloat = 300
+        let height: CGFloat = 300
+        let size = NSSize(width: width, height: height)
+        if let originString = UserDefaults.standard.string(forKey: popoverPanelOriginKey) {
+            let origin = NSPointFromString(originString)
+            panel.setFrame(NSRect(origin: origin, size: size), display: true)
+        } else if let screen = NSScreen.main {
             let x: CGFloat = screen.frame.midX - width/2
             let y: CGFloat = screen.frame.midY - height/2
-            let size = NSSize(width: width, height: height)
             let origin = NSPoint(x: x, y: y)
             panel.setFrame(NSRect(origin: origin, size: size), display: true)
-            hosting.view.frame = NSRect(origin: .zero, size: size)
-            hosting.view.autoresizingMask = [.width, .height]
         }
+        hosting.view.frame = NSRect(origin: .zero, size: size)
+        hosting.view.autoresizingMask = [.width, .height]
+        panel.delegate = self
         NSApp.activate(ignoringOtherApps: true)
         panel.makeKeyAndOrderFront(nil)
         popoverPanel = panel
@@ -137,5 +143,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func hotKeyChanged() {
         statusItem?.menu = makeMenu()
+    }
+
+    @objc func resetPopoverPosition() {
+        UserDefaults.standard.removeObject(forKey: popoverPanelOriginKey)
+    }
+
+    // NSWindowDelegate
+    func windowDidMove(_ notification: Notification) {
+        if let window = notification.object as? NSWindow, window == popoverPanel {
+            let originString = NSStringFromPoint(window.frame.origin)
+            UserDefaults.standard.set(originString, forKey: popoverPanelOriginKey)
+        }
     }
 }
