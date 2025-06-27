@@ -34,9 +34,22 @@
 		C79EC3F32E0E459E00B83088 /* ShareGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C7B114072E0E8E0B00374613 /* Exceptions for "ShareGo" folder in "ShareGo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C79EC3DA2E0E459D00B83088 /* ShareGo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C79EC3DD2E0E459D00B83088 /* ShareGo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C7B114072E0E8E0B00374613 /* Exceptions for "ShareGo" folder in "ShareGo" target */,
+			);
 			path = ShareGo;
 			sourceTree = "<group>";
 		};
@@ -415,6 +428,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareGo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShareGO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -445,6 +459,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareGo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShareGO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
