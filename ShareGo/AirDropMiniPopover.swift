@@ -30,6 +30,7 @@ struct AirDropMiniPopover: View {
                     .fill(.ultraThinMaterial)
                     .frame(width: 270, height: 270)
                     .shadow(color: .black.opacity(0.22), radius: 24, y: 8)
+                    .clipShape(Circle())
                     .overlay(
                         Circle()
                             .strokeBorder(Color.white.opacity(0.22), lineWidth: 2)
