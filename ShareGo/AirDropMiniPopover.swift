@@ -56,13 +56,23 @@ struct AirDropMiniPopover: View {
             }
             .frame(width: 300, height: 300)
             .onDrop(of: [UTType.fileURL], isTargeted: $isTargeted) { providers in
+                var urls: [URL] = []
+                let group = DispatchGroup()
                 for provider in providers {
+                    group.enter()
                     provider.loadDataRepresentation(forTypeIdentifier: UTType.fileURL.identifier) { data, error in
-                        guard let data = data, let url = URL(dataRepresentation: data, relativeTo: nil) else { return }
-                        DispatchQueue.main.async {
-                            let sharing = NSSharingService(named: .sendViaAirDrop)
-                            sharing?.perform(withItems: [url])
+                        if let data = data, let url = URL(dataRepresentation: data, relativeTo: nil) {
+                            DispatchQueue.main.async {
+                                urls.append(url)
+                            }
                         }
+                        group.leave()
+                    }
+                }
+                group.notify(queue: .main) {
+                    if !urls.isEmpty {
+                        let sharing = NSSharingService(named: .sendViaAirDrop)
+                        sharing?.perform(withItems: urls)
                     }
                 }
                 return true
